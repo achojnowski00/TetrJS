@@ -58,9 +58,15 @@ export const TETROMINOS = {
   },
 };
 
+let tetrominos = "IJLOSTZ";
+
 export const randomTetromino = () => {
-  const tetrominos = "IJLOSTZ";
-  const randTetromino =
-    tetrominos[Math.floor(Math.random() * tetrominos.length)];
+  const cloneTetrominos = tetrominos;
+  const randomNumber = Math.floor(Math.random() * cloneTetrominos.length);
+  const randTetromino = cloneTetrominos[randomNumber];
+
+  tetrominos = tetrominos.replace(randTetromino, "");
+  if (tetrominos.length === 0) tetrominos = "IJLOSTZ";
+
   return TETROMINOS[randTetromino];
 };
