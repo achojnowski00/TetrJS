@@ -91,7 +91,7 @@ const Tetris = () => {
       return;
     }
 
-    if (keyCode === 38) {
+    if (keyCode === 38 || keyCode === 32) {
       playerRotate(stage, 1);
       return;
     }
