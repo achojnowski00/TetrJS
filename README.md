@@ -3,7 +3,7 @@
 Its a simle tetris game written in javascript using React hooks.
 Game is created with help of [this tutorial](https://www.youtube.com/watch?v=ZGOaCxX8HIU).
 
-Game is deployed and can be played [here](https://tetrjs.netlify.app/). Have fun! 😀
+Game is deployed and can be played [here](https://tetrjs-ach00.netlify.app/). Have fun! 😀
 
 ## Technologies used in this project
 
